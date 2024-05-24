@@ -25,11 +25,14 @@ const Dragdrop2 = () => {
     [setEdges],
   );
 
+  const proOptions = { hideAttribution: true };
+
   return (
-    <div className='h-screen w-screen border-4 border-blue-400'>
+    <div className='h-screen w-screen'>
       <ReactFlow 
         nodes={nodes}
         edges={edges}
+        proOptions={proOptions}
         onNodesChange={onNodesChange}
         onEdgesChange={onEdgesChange}
         onConnect={onConnect}
